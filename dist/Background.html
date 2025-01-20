@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-700">
+
+
+    <!-- ? Background Color -->
+     <!--*syntax -:  bg-color-value 
+     Class          Properties
+    bg-inherit	    background-color: inherit;
+    bg-current	    background-color: currentColor;
+    bg-transparent	background-color: transparent;
+    bg-black	    background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+    bg-white	    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+    bg-slate-50	    background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+     -->
+    <h2 class="bg-cyan-50">Background Color</h2>
+    <div class="bg-black h-20 w-20">
+        <p class="text-white">Welcome to Tailwind CSS Class</p>
+    </div>
+    <div class="bg-white h-20 w-20">
+        <p class="text-black">Welcome to Tailwind CSS Class</p>
+    </div>
+    <div class="bg-green-600 h-20 w-20">
+        <p class="text-black">Welcome to Tailwind CSS Class</p>
+    </div>
+
+
+    <!-- ? Background Size -->
+    <!-- *syntax -: bg-size-value
+    Class           Properties
+    bg-auto	        background-size: auto;
+    bg-cover	    background-size: cover;
+    bg-contain	    background-size: contain;
+     -->
+    <h2 class="bg-cyan-50">Background Size</h2>
+    <div class="bg-auto bg-no-repeat bg-center h-96 w-96 bg-slate-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s')">Background-size :auto</div>
+    <div class="bg-cover bg-no-repeat bg-center h-96 w-96 bg-slate-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s')">Background-size :cover</div>
+    <div class="bg-contain bg-no-repeat bg-center h-96 w-96 bg-slate-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s')">Background-size :contain</div>
+
+
+
+    <!-- ? Background image -->
+    <!-- *syntax -: bg-image-value
+    Class           Properties
+    bg-none	        background-image: none;
+    bg-gradient-to-t	background-image: linear-gradient(to top, var(--tw-gradient-stops));
+    bg-gradient-to-tr	background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+    bg-gradient-to-r	background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    bg-gradient-to-br	background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+    bg-gradient-to-b	background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    bg-gradient-to-bl	background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+    bg-gradient-to-l	background-image: linear-gradient(to left, var(--tw-gradient-stops));
+    bg-gradient-to-tl	background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+     -->
+    <h2 class="bg-cyan-50">Background Image</h2>
+    <div class="bg-gradient-to-r from-green-400 to-blue-500 h-20 w-2/3">
+        <p class="text-white
+        ">Welcome to Tailwind CSS Class background-image :bg-gradient-to-r </p>
+    </div>
+    <div class="bg-gradient-to-br from-green-400 via-blue-500 to-red-500 h-20 w-2/3">
+        <p class="text-white">Welcome to Tailwind CSS Class background-image :bg-gradient-to-br</p>
+    </div>
+    <div class="bg-gradient-to-tl from-green-400 via-blue-500 to-red-500 h-20 w-2/3">
+        <p class="text-white">Welcome to Tailwind CSS Class background-image :bg-gradient-to-tl</p>
+    </div>
+    
+
+    <!-- ? Background repeat -->
+    <!-- *syntax -: bg-repeat-value
+    Class           Properties
+    bg-repeat	    background-repeat: repeat;
+    bg-no-repeat	background-repeat: no-repeat;
+    bg-repeat-x	    background-repeat: repeat-x;
+    bg-repeat-y	    background-repeat: repeat-y;
+    bg-repeat-round	background-repeat: round;
+    bg-repeat-space	background-repeat: space;
+     -->
+    <h2 class="bg-cyan-50">Background Repeat</h2>
+     <div class="bg-repeat-x  h-96 w-96  bg-yellow-50" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-repeat-x</div>
+    <div class="bg-repeat-y  h-96 w-96  bg-yellow-500" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-repeat-y</div>
+    <div class="bg-repeat  h-96 w-96  bg-yellow-300" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-repeat</div>
+    <div class="bg-no-repeat  h-96 w-96  bg-yellow-900" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-no-repeat</div>
+    <div class="bg-repeat-round  h-96 w-96  bg-yellow-700" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-repeat-round</div>
+    <div class="bg-repeat-space  h-96 w-96  bg-yellow-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') ">Background-repeat-space</div>
+
+
+    <!-- ? Background position -->
+    <!-- *syntax -: bg-position-value
+    Class           Properties
+    bg-bottom	    background-position: bottom;
+    bg-center	    background-position: center;
+    bg-left	        background-position: left;
+    bg-left-bottom	background-position: left bottom;
+    bg-left-top	    background-position: left top;
+    bg-right	    background-position: right;
+    bg-right-bottom	background-position: right bottom;
+    bg-right-top	    background-position: right top;
+    bg-top	        background-position: top;
+     -->
+    <h2 class="bg-cyan-50">Background Position</h2>
+    <div class="bg-bottom bg-cover  h-96 w-96  bg-yellow-50" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-bottom</p></div>
+    <div class="bg-left-bottom bg-cover h-96 w-96  bg-yellow-500" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-left-bottom</p></div>
+    <div class="bg-right-bottom bg-cover h-96 w-96  bg-yellow-300" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-right-bottom</p></div>
+    <div class="bg-right-top bg-cover h-96 w-96  bg-yellow-900" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-right-top</p></div>
+    <div class="bg-left-top bg-cover h-96 w-96  bg-yellow-700" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-left-top</p></div>
+    <div class="bg-center bg-cover h-96 w-96  bg-yellow-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-center</p></div>
+    <div class="bg-right bg-cover h-96 w-96  bg-yellow-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-right</p></div>
+    <div class="bg-left bg-cover h-96 w-96  bg-yellow-200" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-left</p></div>
+
+
+    <!-- ? Background attachment -->
+    <!-- *syntax -: bg-attachment-value
+    Class           Properties
+    bg-fixed	    background-attachment: fixed;
+    bg-local	    background-attachment: local;
+    bg-scroll	    background-attachment: scroll;
+     -->
+    <h2 class="bg-cyan-50">Background Attachment</h2>
+    <div class="bg-fixed bg-cover h-96 w-96  bg-yellow-50" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-fixed</p></div>
+    <div class="bg-local bg-cover h-96 w-96  bg-yellow-500" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50 h-fit">Background-local</p>
+    <p class="text-slate-50 h-fit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint repudiandae harum doloremque qui iste praesentium eos similique aspernatur ab ad ipsam, exercitationem dolorum saepe et deserunt, vel ipsa assumenda accusamus debitis. Est quae nemo ea harum aspernatur, ducimus praesentium assumenda atque porro autem! Illo error sequi distinctio quisquam voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quo aliquam dignissimos velit ducimus facilis iusto numqu alias non minima repellat eum repellendus aspernatur ipsam unde blandi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veritatis!</p>
+    </div>
+    <div class="bg-scroll bg-cover h-96 w-96  bg-yellow-300" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s') "><p class="text-slate-50">Background-scroll  </p> </div>
+
+    <!-- ! Doubt -: tell about bg-scroll and bg-local  -->
+    
+</body>
+</html>
