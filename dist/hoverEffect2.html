@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeStoreapi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Ref:  https://tailwindflex.com/@dika99/product-details-page -->
+
+    <button
+      class="bg-sky-500 hover:bg-sky-700 hover:text-white px-4 py-2 rounded-full"
+    >
+      Hover Me
+    </button>
+
+    <!--! on hover dropdown -->
+
+    <!-- men's clothing -->
+    <div class="group relative cursor-pointer py-2">
+      <div class="flex items-center justify-between space-x-5 bg-white px-4">
+        <a
+          class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
+          onClick=""
+        >
+          Men's clothing
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <div
+        class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+        id="mensoptionsContainer"
+      >
+        <!-- options will display here -->  
+        <!-- options from javascript -->        
+      </div>
+    </div>
+
+    <!-- women's clothing -->
+    <div class="group relative cursor-pointer py-2">
+      <div class="flex items-center justify-between space-x-5 bg-white px-4">
+        <a
+          class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
+          onClick=""
+        >
+          Women's clothing
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <div
+        class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+        id="womensoptionsContainer"
+      >
+        <!-- options will display here -->
+      </div>
+    </div>
+
+    <!-- jewelery -->
+    <div class="group relative cursor-pointer py-2">
+      <div class="flex items-center justify-between space-x-5 bg-white px-4">
+        <a
+          class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
+          onClick=""
+        >
+          jewelery
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <div
+        class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+        id="JewelleryoptionsContainer"
+      >
+        <!-- options will display here -->
+
+        <!-- option 1 -->
+       
+
+        <!-- option 2 -->
+       
+
+        <!-- option 3 -->
+        
+      </div>
+    </div>
+
+    <!-- electronics -->
+    <div class="group relative cursor-pointer py-2">
+      <div class="flex items-center justify-between space-x-5 bg-white px-4">
+        <a
+          class="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
+          onClick=""
+        >
+          Electronics
+        </a>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <div
+        class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible"
+        id="ElectronicoptionsContainer"
+      >
+        <!-- options will display here -->
+
+        <!-- option 1 -->
+        
+
+        <!-- option 2 -->
+        
+
+        <!-- option 3 -->
+      </div>
+    </div>
+
+    <script src="./hoverEffect2.js"></script>
+  </body>
+</html>
